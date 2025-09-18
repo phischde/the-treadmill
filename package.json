@@ -1,0 +1,38 @@
+{
+  "name": "treadmill-site",
+  "version": "1.0.0",
+  "description": "Static site for The Treadmill short story",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build:css": "NODE_ENV=production postcss src/assets/css/main.css --dir dist/assets/css",
+    "build:js": "esbuild src/assets/js/*.js --bundle --minify --outdir=dist/assets/js --format=esm",
+    "build:img": "node scripts/build-images.mjs",
+    "clean": "node scripts/clean.mjs",
+    "rev:assets": "node scripts/rev-assets.mjs",
+    "build": "npm run clean && npm-run-all build:css build:js build:img rev:assets && ELEVENTY_ENV=prod eleventy",
+    "serve": "eleventy --serve"
+  },
+  "keywords": [
+    "eleventy",
+    "short-story",
+    "static-site"
+  ],
+  "author": "Philippe Schrettenbrunner",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-img": "^3.1.7",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.1.2",
+    "esbuild": "^0.25.9",
+    "glob": "^10.3.10",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "sharp": "^0.33.2"
+  }
+}

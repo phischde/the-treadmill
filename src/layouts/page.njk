@@ -1,0 +1,9 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+<article class="page">
+  <div class="page__body prose">
+    {{ content | safe }}
+  </div>
+</article>
+{% endblock %}

@@ -1,0 +1,23 @@
+<header class="site-header" data-observe>
+  <div class="site-header__inner">
+    <a href="/" class="site-header__brand">
+      <span class="site-header__title">{{ site.title }}</span>
+      <span class="site-header__tagline">{{ site.tagline }}</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        {% for item in collections.all | eleventyNavigation %}
+          <li>
+            <a href="{{ item.url }}" class="nav-link{% if item.url == page.url %} is-active{% endif %}">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <button class="font-toggle" type="button" data-font-toggle aria-pressed="false" aria-label="Toggle large typography">
+      <span aria-hidden="true">Aa</span>
+    </button>
+  </div>
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="readingProgress"></div>
+  </div>
+</header>

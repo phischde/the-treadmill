@@ -1,0 +1,46 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+<article class="story" data-progress-target>
+  <section class="hero" data-observe>
+    <div class="hero__media">
+      {% if hero and hero.image %}
+        {% image hero.image, hero.alt or '' , {
+          sizes: "(min-width: 1200px) 460px, (min-width: 900px) 40vw, (min-width: 768px) 55vw, 90vw",
+          className: "hero__image",
+          loading: "eager"
+        } %}
+      {% else %}
+        <div class="hero__placeholder" role="presentation"></div>
+      {% endif %}
+    </div>
+  </section>
+  <section class="story-body prose">
+    {{ content | safe }}
+  </section>
+  {% if afterHero and afterHero.image %}
+    <section class="story-visual" data-observe>
+      <div class="story-visual__media">
+        {% image afterHero.image, afterHero.alt or '', {
+          sizes: "(min-width: 1200px) 920px, (min-width: 768px) 80vw, 95vw",
+          className: "story-visual__image",
+          loading: "lazy"
+        } %}
+      </div>
+      {% if afterHero.caption %}
+        <p class="story-visual__caption">{{ afterHero.caption }}</p>
+      {% endif %}
+    </section>
+  {% endif %}
+  <section class="story-afterword" data-observe>
+    <div class="afterword__inner">
+      <h2>Continue exploring</h2>
+      <p>Discover the author’s background or review the licensing terms for adaptations and translations.</p>
+      <div class="afterword__actions">
+        <a class="button" href="/about/">About the Author</a>
+        <a class="button button--ghost" href="/about/#license">License</a>
+      </div>
+    </div>
+  </section>
+</article>
+{% endblock %}

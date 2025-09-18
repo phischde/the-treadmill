@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.language or 'en' }}" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="{{ site.themeColor }}">
+  {% include "head-meta.njk" %}
+  <link rel="preload" href="/assets/fonts/EBGaramond-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Raleway-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | assetPath }}">
+  {% block head %}{% endblock %}
+  <script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+<body class="font-size-normal">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  {% include "header.njk" %}
+  <main id="main" class="site-main" tabindex="-1">
+    {% block content %}{% endblock %}
+  </main>
+  {% include "footer.njk" %}
+  <script type="module" src="{{ '/assets/js/progress.js' | assetPath }}" defer></script>
+  <script type="module" src="{{ '/assets/js/fadein.js' | assetPath }}" defer></script>
+  <script type="module" src="{{ '/assets/js/hero.js' | assetPath }}" defer></script>
+  <script type="module" src="{{ '/assets/js/font-toggle.js' | assetPath }}" defer></script>
+  {% include "analytics-matomo.njk" %}
+</body>
+</html>

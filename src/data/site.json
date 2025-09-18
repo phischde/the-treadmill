@@ -1,0 +1,19 @@
+{
+  "title": "The Treadmill",
+  "tagline": "A short story by Philippe Schrettenbrunner",
+  "description": "A cautionary tale about intelligence, power, and the heat we leave behind.",
+  "language": "en",
+  "locale": "en_US",
+  "url": "https://treadmill.phisch.de",
+  "author": {
+    "name": "Philippe Schrettenbrunner",
+    "url": "https://phisch.de/"
+  },
+  "license": "CC BY-NC-SA 4.0",
+  "themeColor": "#0b0d16",
+  "matomo": {
+    "enabled": true,
+    "url": "https://metrics.schrett.net/",
+    "siteId": "2"
+  }
+}
