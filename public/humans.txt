@@ -1,0 +1,12 @@
+/* AUTHOR */
+Author: Philippe Schrettenbrunner
+Site: https://treadmill.phisch.de
+Location: Munich, Germany
+
+/* TECHNOLOGY */
+Generator: Eleventy
+Hosting: Self-managed VM in Germany
+Analytics: Matomo (cookieless by default)
+
+/* NOTE */
+This is a personal, non-commercial project.

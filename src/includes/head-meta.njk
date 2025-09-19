@@ -8,6 +8,7 @@
 {% set canonicalUrl = site.url ~ (page.url or '/') %}
 <title>{{ documentTitle }}</title>
 <meta name="description" content="{{ pageDescription }}">
+{% if page.url == '/impressum/' %}<meta name="robots" content="noindex, nofollow">{% endif %}
 <link rel="canonical" href="{{ canonicalUrl }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ pageTitle }}">

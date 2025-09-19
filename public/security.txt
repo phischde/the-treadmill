@@ -1,0 +1,3 @@
+Contact: mailto:treadmill@phisch.de
+Preferred-Languages: en, de
+Policy: https://treadmill.phisch.de/privacy/
