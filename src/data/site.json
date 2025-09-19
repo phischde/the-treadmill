@@ -19,6 +19,7 @@
     "text": "Impressum"
   },
   "themeColor": "#05070f",
+  "socialImage": "/og-image.jpg",
   "matomo": {
     "enabled": true,
     "url": "https://metrics.schrett.net/",
