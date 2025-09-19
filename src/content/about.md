@@ -16,9 +16,9 @@ Hi, I'm Philippe Schrettenbrunner. I work as a Software Architect and Cybersecur
 
 ## Why I Wrote This
 
-*The Treadmill* started during one of those late-night conversations with friends and chatbots where you suddenly see a new angle to an old problem. Patterns began to emerge: how each efficiency breakthrough creates more demand, how moving forward is humanity’s default mode, how the smartest solutions often turn into the most elegant traps.
+*The Treadmill* started during one of those late-night conversations with friends where you suddenly see a new angle to an old problem. Patterns began to emerge: how each efficiency breakthrough creates more demand, how moving forward is humanity’s default mode, how the smartest solutions often turn into the most elegant traps.
 
-This isn’t another “AI turns evil” story — they’re overused. In this story, the machines never betray us. What brought humanity to its peak can’t carry it beyond — the very strategies that made us successful become the chains that bind us. The story asks what happens when our oldest problems — the ones wired into our neurons — scale up to planetary physics.
+This isn’t another “rogue AI gone evil” story — they’re overused. In this story, the machines never betray us. What brought humanity to its peak can’t carry it beyond — the very strategies that made us successful become the chains that bind us. The story asks what happens when our oldest problems — the ones wired into our neurons — scale up to planetary physics.
 
 I developed these ideas through extensive dialogues with ChatGPT, Claude, and Gemini, turning them into both collaborators and proof of concept. I am fully aware of the irony... using the very acceleration I’m describing to craft the story: every brainstorming ran on remote servers, every generated image left a tiny heat signature somewhere. While I wrote the text, an AI agent built this website.
 
