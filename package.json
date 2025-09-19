@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "eleventy --serve",
-    "build:css": "NODE_ENV=production postcss src/assets/css/main.css --dir dist/assets/css",
+    "build:css": "NODE_ENV=production postcss src/assets/css/main.css --dir dist/assets/css && NODE_ENV=production postcss src/assets/css/404.css --dir dist/assets/css",
     "build:js": "esbuild src/assets/js/main.js src/assets/js/consent.js src/assets/js/init.js --bundle --minify --outdir=dist/assets/js --format=esm",
     "build:img": "node scripts/build-images.mjs",
     "clean": "node scripts/clean.mjs",
     "rev:assets": "node scripts/rev-assets.mjs",
-    "build": "npm run clean && npm-run-all2 build:css build:js build:img rev:assets && ELEVENTY_ENV=prod eleventy",
+    "build": "npm run clean && npm-run-all2 build:css build:js build:img rev:assets && ELEVENTY_ENV=prod eleventy && node scripts/generate-csp-header.mjs",
     "serve": "eleventy --serve"
   },
   "keywords": [

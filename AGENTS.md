@@ -75,8 +75,7 @@
 │  ├─ includes/
 │  │  ├─ head-meta.njk
 │  │  ├─ header.njk
-│  │  ├─ footer.njk
-│  │  └─ analytics-matomo.njk  # injected at build; Matomo snippet required
+│  │  └─ footer.njk
 │  ├─ data/
 │  │  └─ site.json
 │  └─ sitemap.njk
@@ -92,37 +91,3 @@
 - Respect `prefers-reduced-motion` in animations and transitions.
 - Maintain a minimum 4.5:1 contrast ratio, visible focus states, and a skip link.
 - Keep text measures comfortable (65–75ch) with adequate line height.
-
-## Deployment Notes
-- Deploy the static output in `dist/` via nginx (or similar) with hashed assets cached long-term and HTML cached briefly.
-- Consider adding security headers such as `X-Content-Type-Options`, `Referrer-Policy`, and a conservative `Permissions-Policy`.
-- Optionally apply a CSP with nonces if inline scripts are eliminated.
-
-### Example nginx Server Block
-```nginx
-server {
-  server_name treadmill.phisch.de;
-  root /var/www/treadmill/dist;
-  index index.html;
-
-  add_header X-Content-Type-Options nosniff;
-  add_header Referrer-Policy strict-origin-when-cross-origin;
-  add_header Permissions-Policy "geolocation=()";
-
-  location /assets/ {
-    expires 1y;
-    add_header Cache-Control "public, immutable";
-  }
-
-  location / {
-    try_files $uri $uri/ =404;
-    add_header Cache-Control "public, max-age=60";
-  }
-}
-```
-
-## Outstanding Inputs
-- Provide final font files for EB Garamond and Raleway in `src/assets/fonts/`.
-- Supply the production-ready hero image depicting Earth.
-- Insert the live Matomo analytics snippet into `src/includes/analytics-matomo.njk` when available.
-- Confirm any additional pages or derivative works that should join the navigation.
