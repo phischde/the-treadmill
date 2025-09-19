@@ -284,6 +284,7 @@ h6 {
     font-size: calc(var(--font-size-prose) * 1.75);
     line-height: 1.25;
     text-transform: none;
+    margin: 0 0 0.75em;
 }
 
 .prose {

@@ -1,6 +1,7 @@
 // eleventy.config.js (ESM)
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import Image from "@11ty/eleventy-img";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "eleventy --serve",
     "build:css": "NODE_ENV=production postcss src/assets/css/main.css --dir dist/assets/css",
-    "build:js": "esbuild src/assets/js/*.js --bundle --minify --outdir=dist/assets/js --format=esm",
+    "build:js": "esbuild src/assets/js/main.js src/assets/js/consent.js src/assets/js/init.js --bundle --minify --outdir=dist/assets/js --format=esm",
     "build:img": "node scripts/build-images.mjs",
     "clean": "node scripts/clean.mjs",
     "rev:assets": "node scripts/rev-assets.mjs",
