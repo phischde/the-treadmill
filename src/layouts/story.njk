@@ -33,14 +33,24 @@
   {% endif %}
   <section class="story-afterword" data-observe>
     <div class="afterword__inner">
-      <h2>What did you think?</h2>
-      <p>Share your thoughts and join the conversation on social media. Did the ending surprise you? How can we avoid this?</p>
+      <h2>The universe is suspiciously quiet.</h2>
+      <p>The trap repeats: Everyone benefits from restraint, but whoever moves fastest wins. So everyone runs. Fire, agriculture, fossil fuels, AI — same pattern, higher stakes.<br>
+         Share your thoughts — especially if you see a way out our fictional Earth missed.</p>
       <div class="afterword__actions">
-        <a class="button" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}" target="_blank" rel="noopener">Discuss on LinkedIn</a>
-        <a class="button" href="https://twitter.com/intent/tweet?text={{ title | urlencode }} by {{ site.author.name | urlencode }}&url={{ site.url }}" target="_blank" rel="noopener">Share on X</a>
-        <a class="button" href="https://bsky.app/intent/compose?text={{ title | urlencode }} by {{ site.author.name | urlencode }} {{ site.url }}{{ page.url }}" target="_blank" rel="noopener">Share on BlueSky</a>
-        <a class="button" href="https://api.whatsapp.com/send?text={{ site.url }}" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="button button--ghost" href="/about/">About the Author</a>
+        <h3>Join the conversation...</h3>
+        <div class="afterword__buttons">
+          <div class="afterword__share">
+            <a class="button" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="button" href="https://twitter.com/intent/tweet?text={{ title | urlencode }} by {{ site.author.name | urlencode }}&url={{ site.url }}" target="_blank" rel="noopener">X</a>
+            <a class="button" href="https://bsky.app/intent/compose?text={{ title | urlencode }} by {{ site.author.name | urlencode }} {{ site.url }}{{ page.url }}" target="_blank" rel="noopener">BlueSky</a>
+            <a class="button" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" rel="noopener">Facebook</a>
+            <a class="button" href="https://api.whatsapp.com/send?text={{ site.url }}" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div class="afterword__author">
+            <a class="button button--ghost" href="/about/">About the Author</a>
+          </div>
+        </div>
+        <p>Please tag <i>#TheTreadmillStory</i></p>
       </div>
     </div>
   </section>
