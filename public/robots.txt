@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /impressum/
+Disallow: /privacy/
 Sitemap: https://treadmill.phisch.de/sitemap.xml
