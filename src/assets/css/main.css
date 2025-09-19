@@ -10,7 +10,7 @@
     --color-border: rgba(255, 255, 255, 0.08);
     --font-body: "EB Garamond", "Iowan Old Style", "Times New Roman", serif;
     --font-heading: "Raleway", "Segoe UI", "Helvetica Neue", sans-serif;
-    --max-width: 72rem;
+    --max-width: 1000px;
     --gutter: 1.5rem;
     --transition-speed: 400ms;
     --hero-media-opacity: 1;
@@ -400,10 +400,6 @@ h6 {
     gap: 1rem;
 }
 
-.afterword__author {
-    display: flex;
-    flex-shrink: 0;
-}
 
 .button {
     display: inline-flex;
@@ -544,9 +540,6 @@ h6 {
         align-items: flex-start;
     }
     
-    .afterword__author {
-        justify-content: flex-start;
-    }
 
     .story-body {
         padding: clamp(2rem, 8vw, 2.75rem);

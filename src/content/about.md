@@ -24,7 +24,7 @@ As I explored these ideas with ChatGPT, Claude, and Gemini, I realized how many 
 
 That's when the story clicked.
 
-I wrote _The Treadmill_ over several weeks, using AI partners to stress-test the science and challenge my assumptions. When I wondered if fusion could really arrive that quickly, or whether my thermodynamic ceiling was plausible, they helped me dig into the research. An AI agent even built this website while I focused on the writing. The irony is intentional: using the very acceleration I'm describing as a tool, not a crutch.
+I wrote _The Treadmill_ over several weeks, using AI partners to stress-test the science and challenge my assumptions. When I wondered if fusion could really arrive that quickly, or whether my thermodynamic ceiling was plausible, they helped me dig into the research. An AI agent even built this website while I focused on the writing. The irony of this is not lost on me. I'm only human, after all.
 
 _The Treadmill_ is a thought experiment, not a forecast. But the dynamics it explores? Those are playing out right now, at planetary scale.
 
@@ -36,4 +36,4 @@ _The Treadmill_ is a thought experiment, not a forecast. But the dynamics it exp
 
 # Contact
 
-For commercial licensing or collaborative projects, get in touch via [phisch.de](https://phisch.de/).
+For commercial licensing or collaborative projects, [please get in touch](/impressum/). 

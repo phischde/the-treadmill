@@ -14,7 +14,11 @@
     "url": "/privacy/",
     "text": "Privacy"
   },
-  "themeColor": "#0b0d16",
+  "imprint": {
+    "url": "/impressum/",
+    "text": "Impressum"
+  },
+  "themeColor": "#05070f",
   "matomo": {
     "enabled": true,
     "url": "https://metrics.schrett.net/",
