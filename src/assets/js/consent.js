@@ -1,13 +1,45 @@
 (function(){
-  if (localStorage.getItem('consent-choice')) return;
-  document.getElementById('consent-bubble').classList.remove('hidden');
-  document.getElementById('consent-yes').addEventListener('click', function(){
-    localStorage.setItem('consent-choice','yes');
-    window.enableMatomoCookies();
-    document.getElementById('consent-bubble').remove();
-  });
-  document.getElementById('consent-no').addEventListener('click', function(){
-    localStorage.setItem('consent-choice','no');
-    document.getElementById('consent-bubble').remove();
-  });
+  var storageAvailable = true;
+  var storedChoice = null;
+
+  try {
+    storedChoice = localStorage.getItem('consent-choice');
+  } catch (err) {
+    storageAvailable = false;
+  }
+
+  if (storedChoice) return;
+
+  var consentBubble = document.getElementById('consent-bubble');
+  if (!consentBubble) return;
+
+  consentBubble.classList.remove('hidden');
+
+  var persistChoice = function(value) {
+    if (!storageAvailable) return;
+    try {
+      localStorage.setItem('consent-choice', value);
+    } catch (err) {
+      storageAvailable = false;
+    }
+  };
+
+  var yesButton = document.getElementById('consent-yes');
+  if (yesButton) {
+    yesButton.addEventListener('click', function(){
+      persistChoice('yes');
+      if (typeof window.enableMatomoCookies === 'function') {
+        window.enableMatomoCookies();
+      }
+      consentBubble.remove();
+    });
+  }
+
+  var noButton = document.getElementById('consent-no');
+  if (noButton) {
+    noButton.addEventListener('click', function(){
+      persistChoice('no');
+      consentBubble.remove();
+    });
+  }
 })();

@@ -7,10 +7,20 @@ export function initializeMatomo(siteConfig) {
   }
 
   var _paq = window._paq = window._paq || [];
+  var storageAccessible = true;
+  var safeGetItem = function(key) {
+    if (!storageAccessible) return null;
+    try {
+      return localStorage.getItem(key);
+    } catch (err) {
+      storageAccessible = false;
+      return null;
+    }
+  };
   // Cookieless by default
   _paq.push(['disableCookies']);
   // Only set DNT if user hasn't consented
-  if (localStorage.getItem('consent-choice') !== 'yes') {
+  if (safeGetItem('consent-choice') !== 'yes') {
     _paq.push(['setDoNotTrack', true]);
   }
   _paq.push(['trackPageView']);
@@ -27,6 +37,9 @@ export function initializeMatomo(siteConfig) {
 
   // Upgrade function for consent
   window.enableMatomoCookies = function() {
+    if (!storageAccessible) {
+      return;
+    }
     _paq.push(['rememberConsentGiven']);      // Tell Matomo we have consent
     _paq.push(['forgetUserOptOut']);          // Clear opt-out if set
     _paq.push(['enableCookies']);             // Re-enable cookies
@@ -51,9 +64,9 @@ export function initializeMatomo(siteConfig) {
     var fifty=false, ninety=false, endSeen=false;
     window.addEventListener('scroll', function() {
       var scrolled = (window.scrollY + window.innerHeight) / document.body.scrollHeight * 100;
-      var hasConsent = localStorage.getItem('consent-choice') === 'yes';
-      
-      if (!fifty && scrolled > 50 && hasConsent) { 
+      var hasConsent = safeGetItem('consent-choice') === 'yes';
+
+      if (!fifty && scrolled > 50 && hasConsent) {
         setTimeout(function() {
           if (window.Matomo && window.Matomo.getTracker) {
             var tracker = window.Matomo.getTracker();
@@ -82,7 +95,7 @@ export function initializeMatomo(siteConfig) {
     if (last) {
       var observer = new IntersectionObserver(function(entries) {
         if (entries[0].isIntersecting && !endSeen) {
-          var hasConsent = localStorage.getItem('consent-choice') === 'yes';
+          var hasConsent = safeGetItem('consent-choice') === 'yes';
           if (hasConsent) {
             setTimeout(function() {
               if (window.Matomo && window.Matomo.getTracker) {

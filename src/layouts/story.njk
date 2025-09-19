@@ -41,10 +41,10 @@
         <div class="afterword__buttons">
           <div class="afterword__share">
             <a class="button" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="button" href="https://twitter.com/intent/tweet?text={{ title | urlencode }} by {{ site.author.name | urlencode }}&url={{ site.url }}" target="_blank" rel="noopener">X</a>
-            <a class="button" href="https://bsky.app/intent/compose?text={{ title | urlencode }} by {{ site.author.name | urlencode }} {{ site.url }}{{ page.url }}" target="_blank" rel="noopener">BlueSky</a>
+            <a class="button" href="https://twitter.com/intent/tweet?text={{ title | urlencode }} by {{ site.author.name | urlencode }}&url={{ site.url }}{{ page.url }}&hashtags=TheTreadmillStory" target="_blank" rel="noopener">X</a>
+            <a class="button" href="https://bsky.app/intent/compose?text={{ title | urlencode }} by {{ site.author.name | urlencode }} {{ site.url }}{{ page.url }} %23TheTreadmillStory" target="_blank" rel="noopener">BlueSky</a>
             <a class="button" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" rel="noopener">Facebook</a>
-            <a class="button" href="https://api.whatsapp.com/send?text={{ site.url }}" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="button" href="https://api.whatsapp.com/send?text={{ title | urlencode }} by {{ site.author.name | urlencode }} {{ site.url }}{{ page.url }} %23TheTreadmillStory" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
         <p>Please tag <i>#TheTreadmillStory</i></p>
