@@ -19,7 +19,6 @@
     {{ content | safe }}
   </section>
   {% if afterHero and afterHero.image %}
-    <section class="story-visual" data-observe>
       <div class="story-visual__media">
         {% image afterHero.image, afterHero.alt or '', {
           sizes: "(min-width: 1200px) 920px, (min-width: 768px) 80vw, 95vw",
@@ -34,11 +33,14 @@
   {% endif %}
   <section class="story-afterword" data-observe>
     <div class="afterword__inner">
-      <h2>Continue exploring</h2>
-      <p>Discover the author’s background or review the licensing terms for adaptations and translations.</p>
+      <h2>What did you think?</h2>
+      <p>Share your thoughts and join the conversation on social media. Did the ending surprise you? How can we avoid this?</p>
       <div class="afterword__actions">
-        <a class="button" href="/about/">About the Author</a>
-        <a class="button button--ghost" href="/about/#license">License</a>
+        <a class="button" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}" target="_blank" rel="noopener">Discuss on LinkedIn</a>
+        <a class="button" href="https://twitter.com/intent/tweet?text={{ title | urlencode }} by {{ site.author.name | urlencode }}&url={{ site.url }}" target="_blank" rel="noopener">Share on X</a>
+        <a class="button" href="https://bsky.app/intent/compose?text={{ title | urlencode }} by {{ site.author.name | urlencode }} {{ site.url }}{{ page.url }}" target="_blank" rel="noopener">Share on BlueSky</a>
+        <a class="button" href="https://api.whatsapp.com/send?text={{ site.url }}" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="button button--ghost" href="/about/">About the Author</a>
       </div>
     </div>
   </section>

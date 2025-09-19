@@ -21,10 +21,19 @@
     {% block content %}{% endblock %}
   </main>
   {% include "footer.njk" %}
+  <div id="consent-bubble" class="consent-bubble hidden">
+    <div class="consent-box">
+      <p><b>Cookies?</b><br>I use privacy-friendly analytics to count readers. No ads.<br>Are you cool with cookies?</p>
+      <button id="consent-yes">Yes, I'm cool</button>
+      <button id="consent-no">No thanks</button>
+      <a href="/privacy/">Privacy</a>
+    </div>
+  </div>
   <script type="module" src="{{ '/assets/js/progress.js' | assetPath }}" defer></script>
   <script type="module" src="{{ '/assets/js/fadein.js' | assetPath }}" defer></script>
   <script type="module" src="{{ '/assets/js/hero.js' | assetPath }}" defer></script>
   <script type="module" src="{{ '/assets/js/font-toggle.js' | assetPath }}" defer></script>
+  <script type="module" src="{{ '/assets/js/consent.js' | assetPath }}" defer></script>
   {% include "analytics-matomo.njk" %}
 </body>
 </html>

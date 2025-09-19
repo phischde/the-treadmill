@@ -10,6 +10,10 @@
     "url": "https://phisch.de/"
   },
   "license": "CC BY-NC-SA 4.0",
+  "privacy": {
+    "url": "/privacy/",
+    "text": "Privacy"
+  },
   "themeColor": "#0b0d16",
   "matomo": {
     "enabled": true,

@@ -1,5 +1,9 @@
 <footer class="site-footer" data-observe>
   <div class="site-footer__inner">
-    <p>&copy; {{ '' | year }} <a href="{{ site.author.url }}">{{ site.author.name }}</a>. Short Story licensed under {{ site.license }}.</p>
+    <p>
+      <span class="footer-item">&copy; {{ '' | year }} <a href="{{ site.author.url }}">{{ site.author.name }}</a>.</span>
+      <span class="footer-item">Short Story licensed under {{ site.license }}</span>
+      <span class="footer-item"><a href="{{ site.privacy.url }}">{{ site.privacy.text }}</a>.</span>
+    </p>
   </div>
 </footer>
