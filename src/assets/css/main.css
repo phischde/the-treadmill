@@ -14,7 +14,7 @@
     --gutter: 1.5rem;
     --transition-speed: 400ms;
     --hero-media-opacity: 1;
-    --reading-measure: 68ch;
+    --content-max-width: 640px;
     --font-size-prose: 1.1875rem;
 }
 
@@ -271,11 +271,6 @@ h6 {
 }
 
 
-.story-body {
-    margin-top: 4rem;
-    padding: clamp(2.5rem, 6vw, 3.5rem);
-}
-
 .story-body h1:first-child {
     margin-top: 0;
 }
@@ -291,7 +286,7 @@ h6 {
     font-size: var(--font-size-prose);
     line-height: 1.5;
     color: var(--color-foreground);
-    max-width: var(--reading-measure);
+    max-width: var(--content-max-width);
     margin: 0 auto;
 }
 
