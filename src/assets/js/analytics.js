@@ -1,4 +1,4 @@
-// Matomo Analytics - moved from inline template
+// Matomo Analytics
 export function initializeMatomo(siteConfig) {
   // Skip entirely if DNT=1
   if (navigator.doNotTrack === '1' || window.doNotTrack === '1' || navigator.msDoNotTrack === '1') {
@@ -10,7 +10,7 @@ export function initializeMatomo(siteConfig) {
   // Cookieless by default
   _paq.push(['disableCookies']);
   // Only set DNT if user hasn't consented
-  if (!localStorage.getItem('consent-choice')) {
+  if (localStorage.getItem('consent-choice') !== 'yes') {
     _paq.push(['setDoNotTrack', true]);
   }
   _paq.push(['trackPageView']);
@@ -105,3 +105,13 @@ export function initializeMatomo(siteConfig) {
 if (window.siteConfig && window.siteConfig.matomo && window.siteConfig.matomo.enabled) {
   initializeMatomo(window.siteConfig);
 }
+
+// activate the consent button
+document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('reset-consent');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+        try { localStorage.removeItem('consent-choice'); } catch (e) {}
+        location.reload();
+    });
+});

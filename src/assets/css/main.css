@@ -382,9 +382,32 @@ h6 {
 }
 
 .afterword__actions {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.story-afterword h2 {
+    margin: 0;
+    font-size: calc(var(--font-size-prose) * 1.2);
+}
+
+.afterword__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.afterword__share {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+.afterword__author {
+    display: flex;
+    flex-shrink: 0;
 }
 
 .button {
@@ -521,9 +544,13 @@ h6 {
         padding: 0.35rem 0.6rem;
     }
 
-    .afterword__actions {
+    .afterword__share {
         flex-direction: column;
         align-items: flex-start;
+    }
+    
+    .afterword__author {
+        justify-content: flex-start;
     }
 
     .story-body {

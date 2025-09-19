@@ -33,20 +33,9 @@ Rejecting keeps Matomo in cookieless mode — nothing on the site stops working.
 
 You can change your choice at any time. Use this button to reset consent and reload the page:
 
-<!-- Inline HTML is allowed in Eleventy Markdown; this avoids javascript: links being stripped -->
 <p>
-  <button id="reset-consent" type="button">Reset consent now</button>
+  <button id="reset-consent" type="button" class="button button--ghost">Reset consent now</button>
 </p>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var btn = document.getElementById('reset-consent');
-  if (!btn) return;
-  btn.addEventListener('click', function () {
-    try { localStorage.removeItem('consent-choice'); } catch (e) {}
-    location.reload();
-  });
-});
-</script>
 
 <noscript>
 If JavaScript is disabled, clear this site’s data in your browser settings to reset your choice.

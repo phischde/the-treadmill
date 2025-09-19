@@ -9,6 +9,7 @@
   <link rel="preload" href="/assets/fonts/Raleway-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | assetPath }}">
   {% block head %}{% endblock %}
+  <script type="application/json" id="site-config">{{ site | json | safe }}</script>
   <script type="module" src="{{ '/assets/js/init.js' | assetPath }}" defer></script>
 </head>
 <body class="font-size-normal">
