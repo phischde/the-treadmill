@@ -12,26 +12,21 @@ eleventyNavigation:
 
 ## The Author
 
-Hi, I'm Philippe Schrettenbrunner. I work as a Software Architect and Cybersecurity Specialist, focusing on the secure design of systems that integrate AI. This gives me a front-row seat to how quickly emerging technologies go from concept to critical infrastructure — and how the decisions we make early can shape the systems we all depend on.
+Hi, I'm Philippe Schrettenbrunner, a Software Architect and Cybersecurity Specialist from Munich who designs secure AI-integrated systems. My work puts me at the crossroads of rapid technological adoption and long-term strategic thinking. This gives me a front-row seat to how quickly emerging technologies go from concept to critical infrastructure.
 
-## Why I Wrote This
+## The Story Behind the Story
 
-*The Treadmill* started during one of those late-night conversations with friends where you suddenly see a new angle to an old problem. Patterns began to emerge: how each efficiency breakthrough creates more demand, how moving forward is humanity’s default mode, how the smartest solutions often turn into the most elegant traps.
+_The Treadmill_ began during conversations with friends about AI's real risks. We agreed that Hollywood needs killer robots for visual drama, but the actual danger isn't malevolent machines — it's us. AI is just a tool. The question is what we do with it once it becomes indispensable.
 
-This isn’t another “rogue AI gone evil” story — they’re overused. In this story, the machines never betray us. What brought humanity to its peak can’t carry it beyond — the very strategies that made us successful become the chains that bind us. The story asks what happens when our oldest problems — the ones wired into our neurons — scale up to planetary physics.
+This led us to prisoner's dilemmas: those situations where individual rational choices create collective disaster. Everyone sees the trap, everyone knows everyone else sees it, yet we march in anyway. It's human nature, in its most predictable and frustrating form.
 
-I developed these ideas through extensive dialogues with ChatGPT, Claude, and Gemini, turning them into both collaborators and proof of concept. I am fully aware of the irony... using the very acceleration I’m describing to craft the story: every brainstorming ran on remote servers, every generated image left a tiny heat signature somewhere. While I wrote the text, an AI agent built this website.
+As I explored these ideas with ChatGPT, Claude, and Gemini, I realized how many big concepts were converging: coordination failures that scale with power, exponential growth hitting physical limits, competition preventing cooperation. Then the Fermi Paradox hit me — where is everyone? The universe is vast and old, yet eerily quiet. What if civilizations consistently hit the same wall — not resource depletion or robot uprisings, but the inability to stop competing long enough to survive their own success?
 
-This is a thought experiment, not a forecast. It’s meant to provoke reflection, not predict catastrophe.
+That's when the story clicked.
 
-## The Story
+I wrote _The Treadmill_ over several weeks, using AI partners to stress-test the science and challenge my assumptions. When I wondered if fusion could really arrive that quickly, or whether my thermodynamic ceiling was plausible, they helped me dig into the research. An AI agent even built this website while I focused on the writing. The irony is intentional: using the very acceleration I'm describing as a tool, not a crutch.
 
-*The Treadmill* is fiction, but the constraints are real. The physics of heat dissipation, the mathematics of coordination failures, the psychology of enhancement addiction — these aren’t speculation. They are the fundamentals.
-
-I’ve woven ideas from economics, psychology, physics, and game theory throughout the narrative. You might enjoy spotting them — or you might just let the story stand on its own, a simple question about whether wisdom can evolve as fast as capability.
-
-Welcome to the treadmill.  
-We’re already running...
+_The Treadmill_ is a thought experiment, not a forecast. But the dynamics it explores? Those are playing out right now, at planetary scale.
 
 # License
 
