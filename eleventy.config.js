@@ -5,6 +5,7 @@ import Image from "@11ty/eleventy-img";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import { minify } from "html-minifier-terser";
 
 let assetManifestCache = null;
 
@@ -110,6 +111,22 @@ export default function(eleventyConfig) {
         if (Number.isNaN(date.valueOf())) return new Date().getFullYear();
         return date.getFullYear();
     });
+
+    if (process.env.ELEVENTY_ENV === "prod") {
+        eleventyConfig.addTransform("htmlmin", async (content, outputPath) => {
+            if (outputPath && outputPath.endsWith(".html")) {
+                return await minify(content, {
+                    removeComments: true,
+                    collapseWhitespace: true,
+                    removeRedundantAttributes: true,
+                    useShortDoctype: true,
+                    minifyCSS: true,
+                    minifyJS: true
+                });
+            }
+            return content;
+        });
+    }
 
     return {
         dir: {
