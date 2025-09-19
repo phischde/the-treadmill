@@ -51,7 +51,7 @@
 ```
 .
 ├─ package.json
-├─ .eleventy.js
+├─ eleventy.config.js
 ├─ public/                     # static assets copied verbatim (favicons, robots, social images)
 ├─ src/
 │  ├─ assets/
