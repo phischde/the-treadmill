@@ -382,8 +382,12 @@ h6 {
 }
 
 .story-afterword h2 {
-    margin: 0;
+    margin: 0 0 -1rem 0;
     font-size: calc(var(--font-size-prose) * 1.2);
+}
+
+.story-afterword h3 {
+    margin: 0 0 -1rem 0;
 }
 
 .afterword__buttons {
