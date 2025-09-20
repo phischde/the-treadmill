@@ -56,6 +56,25 @@ export function initializeMatomo(siteConfig) {
       });
     }
 
+    // Share tracking
+    document.addEventListener('click', function(e) {
+      var shareLink = e.target.closest('[data-share]');
+      if (shareLink) {
+        var platform = shareLink.getAttribute('data-share');
+        var hasConsent = safeGetItem('consent-choice') === 'yes';
+        if (hasConsent) {
+          setTimeout(function() {
+            if (window.Matomo && window.Matomo.getTracker) {
+              var tracker = window.Matomo.getTracker();
+              if (tracker && tracker.trackEvent) {
+                tracker.trackEvent('Share', platform);
+              }
+            }
+          }, 100);
+        }
+      }
+    });
+
     // Only track scroll events on story pages
     var isStoryPage = document.querySelector('.story');
     if (!isStoryPage) return;
