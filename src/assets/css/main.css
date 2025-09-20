@@ -245,6 +245,7 @@ h6 {
     justify-content: center;
     padding-top: clamp(1rem, 3vw, 2.5rem);
     margin-top: -5rem;
+    position: relative;
 }
 
 .hero__media {
@@ -270,9 +271,33 @@ h6 {
     aspect-ratio: 16 / 9;
 }
 
+.reading-time {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    margin: 0;
+}
+
 
 .story-body h1:first-child {
     margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.story-body h1:first-child::after {
+    content: "7 min read";
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    font-weight: 400;
+    flex-shrink: 0;
 }
 
 .story-body h1 {
@@ -525,6 +550,16 @@ h6 {
 
     .hero__media {
         max-width: 26rem;
+    }
+
+    .story-body h1:first-child {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .story-body h1:first-child::after {
+        font-size: 0.7rem;
     }
 
     .hero__title {
