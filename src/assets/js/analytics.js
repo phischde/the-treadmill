@@ -60,22 +60,37 @@ export function initializeMatomo(siteConfig) {
     var isStoryPage = document.querySelector('.story');
     if (!isStoryPage) return;
 
+    // Time tracking
+    var pageLoadTime = Date.now();
+    
     // Scroll depth tracking
-    var fifty=false, ninety=false, endSeen=false;
+    var thirty=false, sixty=false, ninety=false, halfwayReached=false, storyRead=false;
     window.addEventListener('scroll', function() {
       var scrolled = (window.scrollY + window.innerHeight) / document.body.scrollHeight * 100;
       var hasConsent = safeGetItem('consent-choice') === 'yes';
+      var timeElapsed = Date.now() - pageLoadTime;
 
-      if (!fifty && scrolled > 50 && hasConsent) {
+      if (!thirty && scrolled > 30 && hasConsent) {
         setTimeout(function() {
           if (window.Matomo && window.Matomo.getTracker) {
             var tracker = window.Matomo.getTracker();
             if (tracker && tracker.trackEvent) {
-              tracker.trackEvent('Scroll', '50%');
+              tracker.trackEvent('Scroll', '30%');
             }
           }
         }, 100);
-        fifty=true; 
+        thirty=true; 
+      }
+      if (!sixty && scrolled > 60 && hasConsent) {
+        setTimeout(function() {
+          if (window.Matomo && window.Matomo.getTracker) {
+            var tracker = window.Matomo.getTracker();
+            if (tracker && tracker.trackEvent) {
+              tracker.trackEvent('Scroll', '60%');
+            }
+          }
+        }, 100);
+        sixty=true; 
       }
       if (!ninety && scrolled > 90 && hasConsent) { 
         setTimeout(function() {
@@ -88,29 +103,34 @@ export function initializeMatomo(siteConfig) {
         }, 100);
         ninety=true; 
       }
+      
+      // Halfway event: 50% scroll + at least 1 minute
+      if (!halfwayReached && scrolled > 50 && timeElapsed > 60000 && hasConsent) {
+        setTimeout(function() {
+          if (window.Matomo && window.Matomo.getTracker) {
+            var tracker = window.Matomo.getTracker();
+            if (tracker && tracker.trackEvent) {
+              tracker.trackEvent('Story', 'Halfway Read');
+            }
+          }
+        }, 100);
+        halfwayReached=true; 
+      }
+      
+      // Story Read event: 90% scroll + at least 2 minutes + halfway reached
+      if (!storyRead && scrolled > 90 && timeElapsed > 120000 && halfwayReached && hasConsent) {
+        setTimeout(function() {
+          if (window.Matomo && window.Matomo.getTracker) {
+            var tracker = window.Matomo.getTracker();
+            if (tracker && tracker.trackEvent) {
+              tracker.trackEvent('Story', 'Story Read');
+            }
+          }
+        }, 100);
+        storyRead=true; 
+      }
     });
 
-    // Last paragraph view
-    var last = document.querySelector('main p:last-of-type');
-    if (last) {
-      var observer = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting && !endSeen) {
-          var hasConsent = safeGetItem('consent-choice') === 'yes';
-          if (hasConsent) {
-            setTimeout(function() {
-              if (window.Matomo && window.Matomo.getTracker) {
-                var tracker = window.Matomo.getTracker();
-                if (tracker && tracker.trackEvent) {
-                  tracker.trackEvent('Story', 'End Seen');
-                }
-              }
-            }, 100);
-          }
-          endSeen = true;
-        }
-      }, { threshold: 0.6 });
-      observer.observe(last);
-    }
   });
 }
 
