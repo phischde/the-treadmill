@@ -1,7 +1,7 @@
 ---
 layout: story.njk
 title: The Treadmill
-description: A cautionary short story about the race for intelligence and the heat it leaves behind.
+description: "Short Story: near-future sci-fi thought experiment about the race for intelligence and the heat it leaves behind. It explores how exponential AI progress, incentives, and thermodynamics can collide."
 permalink: /
 eleventyNavigation:
   key: Story
