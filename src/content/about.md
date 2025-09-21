@@ -38,4 +38,6 @@ Welcome to The Treadmill. We are already running....
 
 # Contact
 
-For commercial licensing or collaborative projects, [please get in touch](/impressum/). 
+For commercial licensing or collaborative projects, [please get in touch](/impressum/).
+
+Prefer a quick overview of my professional work? Let's connect on [LinkedIn](https://www.linkedin.com/in/philippe-schrettenbrunner/).
