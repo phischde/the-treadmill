@@ -136,8 +136,8 @@ export function initializeMatomo(siteConfig) {
         halfwayReached=true; 
       }
       
-      // Story Read event: 90% scroll + at least 2 minutes + halfway reached
-      if (!storyRead && scrolled > 90 && timeElapsed > 120000 && halfwayReached && hasConsent) {
+      // Story Read event: 80% scroll + at least 2 minutes + halfway reached
+      if (!storyRead && scrolled > 80 && timeElapsed > 120000 && halfwayReached && hasConsent) {
         setTimeout(function() {
           if (window.Matomo && window.Matomo.getTracker) {
             var tracker = window.Matomo.getTracker();
