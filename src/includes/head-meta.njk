@@ -1,9 +1,5 @@
 {% set pageTitle = title or site.title %}
-{% if title and title != site.title %}
-  {% set documentTitle = pageTitle + ' · ' + site.title %}
-{% else %}
-  {% set documentTitle = site.title %}
-{% endif %}
+{% set documentTitle = site.title + ' · ' + pageTitle  %}
 {% set pageDescription = description or site.description %}
 {% set canonicalUrl = site.url ~ (page.url or '/') %}
 <title>{{ documentTitle }}</title>
@@ -11,7 +7,7 @@
 {% if page.url == '/impressum/' or page.url == '/privacy/' %}<meta name="robots" content="noindex, nofollow">{% endif %}
 <link rel="canonical" href="{{ canonicalUrl }}">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:title" content="{{ documentTitle }}">
 <meta property="og:description" content="{{ pageDescription }}">
 <meta property="og:type" content="{% if layout == 'story.njk' %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ canonicalUrl }}">

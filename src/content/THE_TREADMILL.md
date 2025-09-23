@@ -1,17 +1,17 @@
 ---
 layout: story.njk
-title: The Treadmill
-description: "Short Story: near-future sci-fi thought experiment about the race for intelligence and the heat it leaves behind. It explores how exponential AI progress, incentives, and thermodynamics can collide."
+title: A sci-fi short story about the race for AI. 
+description: "Near-future sci-fi thought experiment about the race for AI and the heat it leaves behind. It explores how progress, incentives, & thermodynamics can collide."
 permalink: /
 eleventyNavigation:
   key: Story
   order: 1
 hero:
   image: hero1.png
-  alt: Illustration of Earth glowing with intense heat signatures against a dark space backdrop.
+  alt: The sun rising behind earth on a dark space backdrop.
 afterHero:
   image: hero2.png
-  alt: Extraterrestrial classroom overlooking a holographic display of a planet through a wide viewport.
+  alt: Illustration of Earth glowing with intense heat signatures against a dark space backdrop.
 ---
 
 # THE TREADMILL
