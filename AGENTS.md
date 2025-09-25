@@ -91,3 +91,35 @@
 - Respect `prefers-reduced-motion` in animations and transitions.
 - Maintain a minimum 4.5:1 contrast ratio, visible focus states, and a skip link.
 - Keep text measures comfortable (65–75ch) with adequate line height.
+
+## Future Navigation Enhancement
+
+### Dropdown Navigation Concept
+When additional content is available (German translation, About the Science section), enhance the existing navigation with dropdown menus:
+
+**Current Navigation:** `Story` | `About` | `Aa`
+
+**Enhanced Navigation Structure:**
+- **Story** (with dropdown indicator)
+  - English (current story)
+  - Deutsch (German translation)
+- **About** (with dropdown indicator)
+  - About the Author (current about page)
+  - About the Science (future science content)
+- **Aa** (font toggle remains standalone)
+
+### Implementation Benefits
+- Maintains clean visual hierarchy and existing design
+- Both "Story" and "About" work naturally in both languages
+- Scales gracefully on mobile devices
+- Preserves story-focused primary navigation
+- Future-proof for additional translations or content sections
+
+### Technical Considerations
+- Add subtle dropdown indicators (▾) to show interactive elements
+- Implement responsive dropdown behavior for touch/mobile
+- Maintain accessibility with proper ARIA attributes
+- Consider hover/focus states and keyboard navigation
+- Ensure dropdown content doesn't break on smaller screens
+
+*Note: Implementation planned once German translation and Science Behind the Story content are ready.*
