@@ -6,11 +6,26 @@
     </a>
     <nav class="site-nav" aria-label="Primary">
       <ul>
-        {% for item in collections.all | eleventyNavigation %}
-          <li>
-            <a href="{{ item.url }}" class="nav-link{% if item.url == page.url %} is-active{% endif %}">{{ item.title }}</a>
+        {%- set navPages = collections.all | eleventyNavigation %}
+        {%- for entry in navPages %}
+          <li class="{% if entry.children.length %}has-dropdown{% endif %}">
+            {% if entry.children.length %}
+              <div class="nav-dropdown-wrapper">
+                <a href="{{ entry.url }}" class="nav-link{% if entry.url == page.url %} is-active{% endif %}">{{ entry.title }}</a>
+                <a href="#" class="dropdown-trigger" role="button" aria-label="Show {{ entry.title }} submenu"><span>▼</span></a>
+                <ul class="dropdown-menu">
+                  <!-- Parent item as first dropdown entry -->
+                  <li><a href="{{ entry.url }}" class="nav-link{% if entry.url == page.url %} is-active{% endif %}">{{ entry.title }}</a></li>
+                  {%- for child in entry.children %}
+                  <li><a href="{{ child.url }}" class="nav-link{% if child.url == page.url %} is-active{% endif %}">{{ child.title }}</a></li>
+                  {%- endfor %}
+                </ul>
+              </div>
+            {% else %}
+              <a href="{{ entry.url }}" class="nav-link{% if entry.url == page.url %} is-active{% endif %}">{{ entry.title }}</a>
+            {% endif %}
           </li>
-        {% endfor %}
+        {%- endfor %}
       </ul>
     </nav>
     <button class="font-toggle" type="button" data-font-toggle aria-pressed="false" aria-label="Toggle large typography">

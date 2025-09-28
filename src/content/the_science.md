@@ -3,6 +3,10 @@ layout: page.njk
 title: About the Science
 description: Scientific principles and research behind The Treadmill - thermodynamics, AI scaling, fusion energy, and the human dynamics of technological civilization.
 permalink: /about-the-science/
+eleventyNavigation:
+  key: About the Science
+  parent: About
+  order: 1
 ---
 
 # About the Science
@@ -27,15 +31,17 @@ Proposed by Soviet astronomer Nikolai Kardashev in 1964, this scale measures civ
 A Type I civilization harnesses all available planetary energy. The story explores what happens when a species
 approaches this threshold without leaving their home planet. The transition from Type 0 to Type I might be the most
 dangerous phase in any civilization's development, requiring massive energy infrastructure while still confined to a
-single world's thermal constraints.  
+single world's thermal constraints. Today, humanity is roughly at 0.73 on the Kardashev scale — meaning we are still
+far from planetary mastery but climbing steadily each year.  
 [Learn more about the Kardashev Scale →](https://en.wikipedia.org/wiki/Kardashev_scale)
 
 ### Exponential Computing Growth
 
-Computing power has historically doubled every 18-24 months (Moore's Law), while AI capabilities are currently improving
-even faster. The story extrapolates what happens when this exponential growth meets physical limits. Training each new
-generation of AI models already requires exponentially more compute: GPT-4 used roughly 100 times more compute than
-GPT-3, a pattern that can't continue indefinitely without hitting fundamental barriers.  
+Computing power has historically doubled every 18–24 months (Moore's Law), though that pace is slowing slightly today.
+AI capabilities are improving even faster. The story extrapolates what happens when this exponential growth meets
+physical limits. Training each new generation of AI models already requires vastly more compute: GPT-4 is estimated to
+have used dozens to perhaps a hundred times more compute than GPT-3, a pattern that can't continue indefinitely without
+hitting fundamental barriers.  
 [Learn more about computational scaling →](https://en.wikipedia.org/wiki/Moore%27s_law)
 
 ### Fusion Energy
@@ -50,10 +56,13 @@ solving our coordination problems might accelerate rather than prevent certain e
 
 ### The Prisoner's Dilemma at Scale
 
-Game theory shows how rational actors can get trapped in suboptimal outcomes. When every nation knows that pausing AI
-development means losing competitive advantage, no one can afford to stop, even when everyone sees the collective
-danger. This isn't a failure of intelligence but a tragedy of coordination, with each player making locally rational
-decisions that lead to globally catastrophic outcomes.  
+Game theory shows how rational actors can get trapped in suboptimal outcomes. In the classic version, two prisoners are
+offered a deal: if one betrays the other, they go free while the other serves a long sentence. If both stay silent, both
+get a light sentence — but if both betray, both get heavy sentences. The rational move for each is to betray, even
+though mutual silence would have been better. When every nation knows that pausing AI development means losing
+competitive advantage, no one can afford to stop, even when everyone sees the collective danger. This isn't a failure of
+intelligence but a tragedy of coordination, with each player making locally rational decisions that lead to globally
+catastrophic outcomes.  
 [Learn more about the prisoner's dilemma →](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma)
 
 ### Technological Dependency
@@ -83,17 +92,21 @@ made sense, but because not building them seemed even more dangerous.
 ### The Fermi Paradox
 
 If the universe is vast and old, where is everybody? The Fermi Paradox highlights the puzzling silence of the cosmos
-despite the high probability of other civilizations existing. The story offers one possible answer: intelligent species
-might regularly enhance themselves into extinction before achieving interstellar reach. Perhaps the universe isn't
-empty. It's full of civilizations that burned too bright and too fast.  
+despite the high probability of other civilizations existing. It combines astronomy, probability, and observation: there
+are hundreds of billions of stars older than the Sun, and many should host habitable planets — yet we see no clear signs
+of technological life. The story offers one possible answer: intelligent species might regularly enhance themselves into
+extinction before achieving interstellar reach. Perhaps the universe isn't empty. It's full of civilizations that burned
+too bright and too fast.  
 [Learn more about the Fermi Paradox →](https://en.wikipedia.org/wiki/Fermi_paradox)
 
 ### The Great Filter
 
 The Great Filter hypothesis suggests there's some nearly insurmountable challenge that prevents life from spreading
 throughout the universe. Most hope the filter is behind us, perhaps the jump to multicellular life or the evolution of
-intelligence. But what if it's ahead? The story presents intelligent tool use combined with poor coordination as a
-candidate for this filter, a challenge that every technological species must face and most fail.  
+intelligence. But what if it's ahead? It could take the form of nuclear war, runaway AI, or ecosystem collapse — any
+factor that consistently wipes out civilizations at a certain level of complexity. The story presents intelligent tool
+use combined with poor coordination as a candidate for this filter, a challenge that every technological species must
+face and most fail.  
 [Learn more about the Great Filter →](https://en.wikipedia.org/wiki/Great_Filter)
 
 ---

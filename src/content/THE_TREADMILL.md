@@ -1,8 +1,18 @@
 ---
 layout: story.njk
-title: A sci-fi short story about the race for AI. 
+title: A sci-fi short story about the race for AI.
 description: "Near-future sci-fi thought experiment about the race for AI and the heat it leaves behind. It explores how progress, incentives, & thermodynamics can collide."
 permalink: /
+language: en
+locale: en_US
+publishedAt: "2025-09-18T18:11:04+02:00"
+modifiedAt: "2025-09-18T18:11:04+02:00"
+readingTime: "7 min read"
+afterword:
+  heading: "The universe is suspiciously quiet."
+  description: "This AI safety thought experiment isn't about rogue machines; the existential risk might come from us. Some think artificial intelligence could be our Great Filter. Are we ready for tools this powerful?"
+  cta: "See a way through?"
+  shareText: "Share this with someone building our future. Tag <i>#TheTreadmillStory</i>, I'm curious how we navigate both the technical and human challenges of AI development to actually reach the stars."
 eleventyNavigation:
   key: Story
   order: 1
