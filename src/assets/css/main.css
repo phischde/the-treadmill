@@ -83,7 +83,6 @@ a:focus {
 }
 
 
-
 p {
     margin-block: 1.5rem;
 }
@@ -279,7 +278,7 @@ h6 {
     border: 1px solid var(--color-border);
     border-radius: 0.75rem;
     list-style: none;
-    padding: 0.5rem 0;
+    padding: 0;
     margin: 0;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(16px);
@@ -287,8 +286,8 @@ h6 {
     visibility: hidden;
     transform: translateY(-10px);
     transition: opacity var(--transition-speed) ease,
-                visibility var(--transition-speed) ease,
-                transform var(--transition-speed) ease;
+    visibility var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
     z-index: 1000;
     overflow: hidden;
     display: block;
@@ -307,10 +306,6 @@ h6 {
     padding: 0;
     display: block;
     width: 100%;
-}
-
-.dropdown-menu li:not(.dropdown-separator) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .dropdown-menu li:last-child {
@@ -721,7 +716,7 @@ h1[data-reading-time]::after {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
 
     .story-body {
         padding: clamp(2rem, 8vw, 2.75rem);
@@ -750,32 +745,32 @@ h1[data-reading-time]::after {
 }
 
 .consent-bubble {
-    position: fixed; 
-    bottom: 1rem; 
+    position: fixed;
+    bottom: 1rem;
     right: 1rem;
-    font-family: var(--font-heading); 
+    font-family: var(--font-heading);
     font-size: 0.9rem;
     max-width: 380px;
     z-index: 9999;
 }
 
 .consent-box {
-    background: rgba(40,45,55,0.95); 
+    background: rgba(40, 45, 55, 0.95);
     color: #fff;
-    padding: 1rem; 
+    padding: 1rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .consent-box p {
-    margin-top: 0 ;
+    margin-top: 0;
 }
 
 .consent-box button {
     border: none;
-    padding: 0.4rem 0.8rem; 
+    padding: 0.4rem 0.8rem;
     margin-right: 0.4rem;
-    border-radius: 6px; 
+    border-radius: 6px;
     cursor: pointer;
     font-family: var(--font-heading);
     font-size: inherit;
@@ -787,20 +782,20 @@ h1[data-reading-time]::after {
     background: #41a3c4;
 }
 
-#consent-yes:hover { 
-    background: #5bb4d1; 
+#consent-yes:hover {
+    background: #5bb4d1;
 }
 
 #consent-no {
     background: #d03c0e;
 }
 
-#consent-no:hover { 
-    background: #e55a32; 
+#consent-no:hover {
+    background: #e55a32;
 }
 
-.hidden { 
-    display: none; 
+.hidden {
+    display: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
