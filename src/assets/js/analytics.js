@@ -81,7 +81,10 @@ export function initializeMatomo(siteConfig) {
 
     // Time tracking
     var pageLoadTime = Date.now();
-    
+
+    // Get page language
+    var pageLanguage = (window.pageConfig && window.pageConfig.language) || 'unknown';
+
     // Scroll depth tracking
     var thirty=false, sixty=false, ninety=false, halfwayReached=false, storyRead=false;
     window.addEventListener('scroll', function() {
@@ -94,7 +97,7 @@ export function initializeMatomo(siteConfig) {
           if (window.Matomo && window.Matomo.getTracker) {
             var tracker = window.Matomo.getTracker();
             if (tracker && tracker.trackEvent) {
-              tracker.trackEvent('Scroll', '30%');
+              tracker.trackEvent('Scroll', '30%', pageLanguage);
             }
           }
         }, 100);
@@ -105,7 +108,7 @@ export function initializeMatomo(siteConfig) {
           if (window.Matomo && window.Matomo.getTracker) {
             var tracker = window.Matomo.getTracker();
             if (tracker && tracker.trackEvent) {
-              tracker.trackEvent('Scroll', '60%');
+              tracker.trackEvent('Scroll', '60%', pageLanguage);
             }
           }
         }, 100);
@@ -116,7 +119,7 @@ export function initializeMatomo(siteConfig) {
           if (window.Matomo && window.Matomo.getTracker) {
             var tracker = window.Matomo.getTracker();
             if (tracker && tracker.trackEvent) {
-              tracker.trackEvent('Scroll', '90%');
+              tracker.trackEvent('Scroll', '90%', pageLanguage);
             }
           }
         }, 100);
@@ -129,7 +132,7 @@ export function initializeMatomo(siteConfig) {
           if (window.Matomo && window.Matomo.getTracker) {
             var tracker = window.Matomo.getTracker();
             if (tracker && tracker.trackEvent) {
-              tracker.trackEvent('Story', 'Halfway Read');
+              tracker.trackEvent('Story', 'Halfway Read', pageLanguage);
             }
           }
         }, 100);
@@ -142,7 +145,7 @@ export function initializeMatomo(siteConfig) {
           if (window.Matomo && window.Matomo.getTracker) {
             var tracker = window.Matomo.getTracker();
             if (tracker && tracker.trackEvent) {
-              tracker.trackEvent('Story', 'Story Read');
+              tracker.trackEvent('Story', 'Story Read', pageLanguage);
             }
           }
         }, 100);

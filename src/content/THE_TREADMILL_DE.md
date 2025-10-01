@@ -1,12 +1,13 @@
 ---
 layout: story.njk
-title: Eine Sci-Fi-Kurzgeschichte über das Rennen um KI
+title: Das Hamsterrad - Eine Sci-Fi-Kurzgeschichte über das Rennen um KI
 description: "Ein Sci-Fi-Gedankenexperiment in der nahen Zukunft über das Wettrennen um KI und die Hitze, die es hinterlässt. Es erforscht, wie Fortschritt, Anreize und Thermodynamik kollidieren können."
 permalink: /story-de/
 language: de
 locale: de_DE
-publishedAt: "2025-09-18T18:11:04+02:00"
-modifiedAt: "2025-09-18T18:11:04+02:00"
+socialImage: /og-image-de.jpg
+publishedAt: "2025-10-01T08:12:45+02:00"
+modifiedAt: "2025-10-01T08:12:45+02:00"
 readingTime: "7 Min Lesezeit"
 afterword:
   heading: "Das Universum ist verdächtig still."
@@ -31,13 +32,13 @@ Wir nannten es die Intelligenz-Explosion, und anfangs schien uns dieser Name bei
 
 Am erstaunlichsten war die Kernfusion, der ewige „kommt in zwanzig Jahren“-Traum der Menschheit. Der Durchbruch gelang innerhalb weniger Monate, nachdem die KI sich der Herausforderung angenommen hatte. Neuronale Netze entwarfen elegante magnetische Einschlusssysteme, die unseren brillantesten Physikern ein halbes Jahrhundert lang verborgen geblieben waren. Plötzlich war saubere, unerschöpfliche Energie kein Traum mehr, sondern ein Posten in kommunalen Haushalts-Budgets. Dieser Durchbruch fühlte sich wie Magie an – und wir wollten mehr davon. Die gesamte Intelligenzkapazität des Planeten verdoppelte sich alle sechs Monate. Jeder Sprung nach vorn erzeugte die Nachfrage nach dem nächsten und die Kurve bog sich nach oben wie die Bahn einer Rakete.
 
-Die Maschinen dachten schneller als die Biologie es je könnte. Was Wissenschaftler Jahrzehnte kostete, lieferte die KI in Wochen. Die Entwicklung von Medikamenten schrumpfte von zehnjährigen Studien auf zehntägige Sprints. Mathematische Beweise, die wir für unerreichbar hielten, entstanden über Nacht. Wir staunten über diese Silizium-Geister, diese Kollegen, die mehr Wissen speichern konnten als jede Bibliothek.
+Die Maschinen dachten schneller als die Biologie es je könnte. Was Wissenschaftler:innen Jahrzehnte kostete, lieferte die KI in Wochen. Die Entwicklung von Medikamenten schrumpfte von zehnjährigen Studien auf zehntägige Sprints. Mathematische Beweise, die wir für unerreichbar hielten, entstanden über Nacht. Wir staunten über diese Silizium-Geister, diese Kollegen, die mehr Wissen speichern konnten als jede Bibliothek.
 
 Es begann als Partnerschaft. Wir stellten Fragen, und die KI lieferte Antworten. Ärzte konsultierten Diagnosesysteme, die weitaus ausgefeilter waren als alles, was je an einer Medizinschule gelehrt wurde. Ingenieurinnen und Ingenieure arbeiteten mit Entwurfssystemen zusammen, die jenseits menschlicher Intuition operierten. Forschende arbeiteten Seite an Seite mit maschinellen Kolleginnen und Kollegen, die in einer Stunde mehr Daten durchdrangen als ein Mensch in seinem gesamten Leben.
 
 Die Verbesserungen wirkten berauschend, ja geradezu süchtig machend. Jeder Durchbruch löste einen Dopaminschub aus, wie er bei keiner rein menschlichen Leistung mehr erreicht wurde. Warum sich mit den Grenzen des menschlichen Denkens herumschlagen, wenn unbegrenzte Intelligenz auf Abruf bereitstand? Von KI gesteuerte Verkehrssysteme eliminierten Staus. Wirtschaftsmodelle sagten Marktschwankungen mit beunruhigender Präzision voraus. Selbst die Künste erblühten, als sich menschliche Vorstellungskraft mit algorithmischer Kreativität verband. Einen Moment lang fühlte es sich an, als hätten wir eine bessere Version von uns selbst erschaffen.
 
-Mitte der 2030er Jahre dauerte der erste Stromausfall in einer Metropole nur dreizehn Stunden – genug, um zu zeigen, dass niemand mehr wusste, wie man das System manuell betreibt. Von diesem Tag an schlug keiner mehr ernsthaft vor, die Maschinen abzuschalten. Aus Partnerschaft war Abhängigkeit geworden. Der Alltag war über die menschliche Begreifbarkeit hinausgewachsen. Lieferketten waren mit Millionen-Variablen-Optimierungen abgestimmt. Finanzmärkte bewegten sich schneller, als Neuronen Signale weiterleiten konnten. Medizinische Behandlungen erforderten eine genomische Verarbeitung, die kein einzelner Verstand mehr begreifen konnte.
+Mitte der 2030er Jahre dauerte der erste Stromausfall in einer Metropole nur dreizehn Stunden – genug, um zu zeigen, dass niemand mehr wusste, wie man das System manuell betreibt. Von diesem Tag an schlug keiner mehr ernsthaft vor, die Maschinen abzuschalten. Aus Partnerschaft war Abhängigkeit geworden. Der Alltag war über die menschliche Begreifbarkeit hinausgewachsen. Lieferketten waren auf Millionen von Variablen optimiert. Finanzmärkte bewegten sich schneller, als Neuronen Signale weiterleiten konnten. Medizinische Behandlungen erforderten eine genomische Verarbeitung, die kein einzelner Verstand mehr begreifen konnte.
 
 Wir konnten nicht zurück. Unsere Städte, unsere Wirtschaft und unsere gesamte Existenz hingen von den Maschinen ab. Ein Verkehrssystem ohne KI würde binnen Stunden kollabieren. Medizinische Diagnosen würden entscheidende Muster übersehen. Die Zivilisation war inzwischen zu komplex geworden, als dass die Biologie sie alleine aufrechterhalten könnte.
 
@@ -73,7 +74,7 @@ Der Dozent spulte die Anzeige auf 2030 zurück, die Erde noch blau und lebendig.
 
 Die Schüler gingen hinaus und plauderten leise vor sich hin, während es im Raum still wurde.
 
-Die Erde berührte den Dozenten schon immer. Er zeigte diese Dokumentation jedes mal, obwohl er noch elf andere Fälle hätte. Keine Killerroboter, kein Aufstand – nur eine Spezies, die nicht aufhören konnte, nach mehr zu streben, bis ihr Planet aufgab.
+Die Erde berührte den Dozenten schon immer. Er zeigte diese Dokumentation jedes Mal, obwohl er noch elf andere Fälle hätte. Keine Killerroboter, kein Aufstand – nur eine Spezies, die nicht aufhören konnte, nach mehr zu streben, bis ihr Planet aufgab.
 
 Ein sanftes Klicken des Kiefers. Ein paar private Worte, gesprochen in den leeren Raum und zur toten Welt auf dem Display:
 

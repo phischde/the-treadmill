@@ -253,12 +253,14 @@ h6 {
     justify-content: center;
     text-decoration: none;
     transition: transform var(--transition-speed) ease;
+    min-width: 44px;
+    min-height: 44px;
 }
 
 .dropdown-trigger span {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1;
-    margin-left: -0.7rem;
+    margin-left: -0.4rem;
 }
 
 .dropdown-trigger:hover,
@@ -717,7 +719,6 @@ h1[data-reading-time]::after {
         align-items: flex-start;
     }
 
-
     .story-body {
         padding: clamp(2rem, 8vw, 2.75rem);
     }
@@ -732,6 +733,39 @@ h1[data-reading-time]::after {
 
     .story-visual__caption {
         letter-spacing: 0.12em;
+    }
+
+    /* Mobile-specific dropdown styles */
+    .nav-dropdown-wrapper {
+        cursor: pointer;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+    }
+
+    .dropdown-trigger {
+        padding: 0.35rem 0.6rem;
+        min-width: 48px;
+        min-height: 48px;
+    }
+
+    .dropdown-trigger span {
+        font-size: 0.9rem;
+        margin-left: -0.2rem;
+    }
+
+    /* Disable CSS hover on mobile */
+    .dropdown-trigger:hover + .dropdown-menu,
+    .dropdown-menu:hover {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+    }
+
+    /* Ensure dropdown menu items are clickable */
+    .dropdown-menu .nav-link {
+        pointer-events: auto;
+        touch-action: manipulation;
     }
 
     /* Adjust spacing for large font on mobile */
